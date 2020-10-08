@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a67a9c0-a2ce-4f9b-8f62-3314cf3fdfac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BlackJack/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/controller/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/controller/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/AmericanNewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/AmericanNewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/BasicHitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/BasicHitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/IHitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/IHitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/INewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/INewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/InternationalNewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/InternationalNewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/RulesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/RulesFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/SimpleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/SimpleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/SwedishView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/SwedishView.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="cefb591e-acb3-4f32-9731-a08f2b7b22bb" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iaYmZnVDU2skxGSSIM0EWtrTnz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="blackjackjava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a67a9c0-a2ce-4f9b-8f62-3314cf3fdfac" name="Default Changelist" comment="" />
+      <created>1602147329308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602147329308</updated>
+      <workItem from="1602147330396" duration="679000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
