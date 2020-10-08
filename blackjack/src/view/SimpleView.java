@@ -1,5 +1,6 @@
 package view;
 
+import controller.GameActions;
 import model.Card;
 
 public class SimpleView implements IView {
@@ -10,17 +11,29 @@ public class SimpleView implements IView {
         System.out.println("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
     }
 
-    public int GetInput()
+    public GameActions GetInput()
     {
         try {
             int c = System.in.read();
             while (c == '\r' || c =='\n') {
                 c = System.in.read();
             }
-            return c;
+            switch (c)
+            {
+                case 'p':
+                    return GameActions.PLAY;
+                case 'h':
+                    return GameActions.HIT;
+                case 's':
+                    return GameActions.STAND;
+                case 'q':
+                    return GameActions.QUIT;
+                default:
+                    return GameActions.DEFAULT;
+            }
         } catch (java.io.IOException e) {
             System.out.println("" + e);
-            return 0;
+            return GameActions.DEFAULT;
         }
     }
 

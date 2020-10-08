@@ -4,32 +4,43 @@ import model.Game;
 import view.IView;
 
 public class PlayGame {
-    public boolean Play(Game a_game, IView a_view) {
-        a_view.DisplayWelcomeMessage();
+    private Game game;
+    private IView view;
 
-        a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
-        a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+    public PlayGame(Game a_game, IView a_view) {
+        game = a_game;
+        view = a_view;
+    }
 
-        if (a_game.IsGameOver())
+    public boolean Play() {
+        view.DisplayWelcomeMessage();
+
+        view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
+        view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
+
+        if (game.IsGameOver())
         {
-            a_view.DisplayGameOver(a_game.IsDealerWinner());
+            view.DisplayGameOver(game.IsDealerWinner());
         }
 
-        int input = a_view.GetInput();
+        GameActions input = view.GetInput();
 
-        if (input == 'p')
-        {
-            a_game.NewGame();
+        switch (input) {
+            case PLAY:
+                game.NewGame();
+                break;
+            case HIT:
+                game.Hit();
+                break;
+            case STAND:
+                game.Stand();
+                break;
+            case QUIT:
+                return false;
+            case DEFAULT:
+            default:
+                break;
         }
-        else if (input == 'h')
-        {
-            a_game.Hit();
-        }
-        else if (input == 's')
-        {
-            a_game.Stand();
-        }
-
-        return input != 'q';
+        return true;
     }
 }
