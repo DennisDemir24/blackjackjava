@@ -1,5 +1,6 @@
 package model;
 
+import model.rules.IObserver;
 import model.rules.RulesFactory;
 
 public class Game {
@@ -11,6 +12,11 @@ public class Game {
     {
         m_dealer = new Dealer(new RulesFactory());
         m_player = new Player();
+    }
+
+    public void addObserver(IObserver obs) {
+        m_dealer.addObserver(obs);
+        m_player.addObserver(obs);
     }
 
 
