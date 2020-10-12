@@ -50,5 +50,7 @@ public class PlayGame implements IObserver {
     public void update() {
         view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
         view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
+
     }
+
 }
