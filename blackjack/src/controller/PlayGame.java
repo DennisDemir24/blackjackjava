@@ -1,15 +1,17 @@
 package controller;
 
 import model.Game;
+import model.rules.IObserver;
 import view.IView;
 
-public class PlayGame {
+public class PlayGame implements IObserver {
     private Game game;
     private IView view;
 
-    public PlayGame(Game a_game, IView a_view) {
+    public PlayGame(Game a_game, IView a_view)  {
         game = a_game;
         view = a_view;
+        game.addObserver(this);
     }
 
     public boolean Play() {
@@ -43,4 +45,12 @@ public class PlayGame {
         }
         return true;
     }
+
+    @Override
+    public void update() {
+        view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
+        view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
+
+    }
+
 }
