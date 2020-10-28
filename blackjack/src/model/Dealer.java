@@ -34,11 +34,7 @@ public class Dealer extends Player {
 
     public boolean Hit(Player a_player) {
         if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver()) {
-            Card c;
-            c = m_deck.GetCard();
-            c.Show(true);
-            a_player.DealCard(c);
-
+            a_player.DealCard(m_deck.GetCard(), true);
             return true;
         }
         return false;
@@ -57,11 +53,6 @@ public class Dealer extends Player {
     }
 
     public boolean IsDealerWinner(Player a_player) {
-//        if (a_player.CalcScore() > g_maxScore) {
-//            return true;
-//        } else if (CalcScore() > g_maxScore) {
-//            return false;
-//        }
         return m_winRule.isDealerWinner(this.CalcScore(), a_player.CalcScore());
     }
 

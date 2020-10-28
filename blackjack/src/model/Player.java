@@ -17,8 +17,9 @@ public class Player extends GameObserver {
         System.out.println("Hello List World");
     }
 
-    public void DealCard(Card a_addToHand)
+    public void DealCard(Card a_addToHand,Boolean showCard)
     {
+        a_addToHand.Show(showCard);
         m_hand.add(a_addToHand);
         notifyObserver();
     }
