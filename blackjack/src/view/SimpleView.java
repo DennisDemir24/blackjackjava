@@ -8,17 +8,23 @@ public class SimpleView implements IView {
         for (int i = 0; i < 50; i++) {
             System.out.print("\n");
         }
-        ;
+
         System.out.println("Hello Black Jack World");
         System.out.println("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
     }
 
     public GameActions GetInput() {
+        return getGameActions();
+    }
+
+    static GameActions getGameActions() {
         try {
             int c = System.in.read();
+
             while (c == '\r' || c == '\n') {
                 c = System.in.read();
             }
+
             switch (c) {
                 case 'p':
                     return GameActions.PLAY;
@@ -52,9 +58,11 @@ public class SimpleView implements IView {
     private void DisplayHand(String a_name, Iterable<Card> a_hand, int a_score) {
         
         System.out.println(a_name + " Has: ");
+
         for (Card c : a_hand) {
             DisplayCard(c);
         }
+
         System.out.println("Score: " + a_score);
         System.out.println("");
     }
@@ -66,7 +74,5 @@ public class SimpleView implements IView {
         } else {
             System.out.println("You Won!");
         }
-
     }
-
 }
