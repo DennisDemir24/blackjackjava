@@ -3,12 +3,12 @@ package model.rules;
 import java.util.Random;
 
 public class WinGameStrategy implements IWinStrategy {
-    private int equalHitLimit = 21;
 
     @Override
     public boolean isDealerWinner(int dealerScore, int playerScore) {
         Random gen = new Random();
 
+        int equalHitLimit = 21;
         if (dealerScore < playerScore && playerScore <= equalHitLimit) {
             return false;
         } else if (dealerScore > playerScore && dealerScore <= equalHitLimit) {
@@ -19,9 +19,7 @@ public class WinGameStrategy implements IWinStrategy {
             return false;
         } else if (dealerScore == playerScore && dealerScore < equalHitLimit) {
             int winner = gen.nextInt(2);
-            if (winner == 0) {
-                return false;
-            }
+            return winner != 0;
         } return true;
     }
 }

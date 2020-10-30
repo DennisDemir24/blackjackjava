@@ -8,8 +8,7 @@ public class Game {
     private Dealer m_dealer;
     private Player m_player;
 
-    public Game()
-    {
+    public Game() {
         m_dealer = new Dealer(new RulesFactory());
         m_player = new Player();
     }
@@ -30,20 +29,19 @@ public class Game {
         return m_dealer.IsDealerWinner(m_player);
     }
 
-    public boolean NewGame()
+    public void NewGame()
     {
-        return m_dealer.NewGame(m_player);
+        m_dealer.NewGame(m_player);
     }
 
-    public boolean Hit()
+    public void Hit()
     {
-        return m_dealer.Hit(m_player);
+        m_dealer.Hit(m_player);
     }
 
-    public boolean Stand()
-    {
+    public void Stand() {
         // TODO: Implement this according to Game_Stand.sequencediagram
-        return m_dealer.Stand();
+        m_dealer.Stand();
     }
 
     public Iterable<Card> GetDealerHand()

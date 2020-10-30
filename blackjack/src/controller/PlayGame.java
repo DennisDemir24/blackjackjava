@@ -20,8 +20,7 @@ public class PlayGame implements IObserver {
         view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
         view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
 
-        if (game.IsGameOver())
-        {
+        if (game.IsGameOver()) {
             view.DisplayGameOver(game.IsDealerWinner());
         }
 
@@ -48,9 +47,12 @@ public class PlayGame implements IObserver {
 
     @Override
     public void update() {
-        view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
-        view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
-
+        try {
+            Thread.sleep(1300);
+            view.DisplayDealerHand(game.GetDealerHand(), game.GetDealerScore());
+            view.DisplayPlayerHand(game.GetPlayerHand(), game.GetPlayerScore());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
-
 }
